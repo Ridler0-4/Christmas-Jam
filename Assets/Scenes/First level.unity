@@ -521,6 +521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   jumpHeight: 5
+  UnknownPlayersBody: {fileID: 215036622}
 --- !u!1 &417962657
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +834,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 417962658}
     m_Modifications:
+    - target: {fileID: 1372531364157203540, guid: e65f7dfc602a2634c93c90dad290315b, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2587088670041417075, guid: e65f7dfc602a2634c93c90dad290315b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.53
