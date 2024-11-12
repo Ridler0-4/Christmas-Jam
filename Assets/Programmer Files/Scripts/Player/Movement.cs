@@ -5,7 +5,7 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float speed = 2f;
     [SerializeField]
-    private float jumpHeight = 15;
+    private float jumpHeight = 5;
 
     private Vector2 moveDirection = Vector2.zero;
 
