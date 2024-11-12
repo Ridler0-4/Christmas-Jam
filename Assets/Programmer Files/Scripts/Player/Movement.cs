@@ -5,12 +5,14 @@ using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 50f;
+    private float speed = 25f;
     [SerializeField]
-    private float jumpHeight = 50;
+    private float jumpHeight = 15;
 
     private Vector2 moveDirection = Vector2.zero;
 
+
+    [SerializeField]
     private Rigidbody2D UnknownPlayersBody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
