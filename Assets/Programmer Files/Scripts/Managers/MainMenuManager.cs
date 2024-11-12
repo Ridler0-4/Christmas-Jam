@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadGame : MonoBehaviour
+public class MainMenuManager : MonoBehaviour
 {
     public void SwapScene(string SceneName)
     {
