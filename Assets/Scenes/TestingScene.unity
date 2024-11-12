@@ -507,6 +507,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8211334983761264066, guid: 7d591f9864c08ae43a94beb235f0f667, type: 3}
+      propertyPath: speed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211334983761264066, guid: 7d591f9864c08ae43a94beb235f0f667, type: 3}
+      propertyPath: UnknownPlayersBody
+      value: 
+      objectReference: {fileID: 1281407833}
     - target: {fileID: 8577038625767307440, guid: 7d591f9864c08ae43a94beb235f0f667, type: 3}
       propertyPath: m_DefaultControlScheme
       value: 
@@ -516,6 +524,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d591f9864c08ae43a94beb235f0f667, type: 3}
+--- !u!50 &1281407833 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3087109771819698318, guid: 7d591f9864c08ae43a94beb235f0f667, type: 3}
+  m_PrefabInstance: {fileID: 1281407832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1293848545
 GameObject:
   m_ObjectHideFlags: 0

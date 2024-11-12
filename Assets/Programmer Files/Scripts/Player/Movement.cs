@@ -11,6 +11,8 @@ public class Movement : MonoBehaviour
 
     private Vector2 moveDirection = Vector2.zero;
 
+
+    [SerializeField]
     private Rigidbody2D UnknownPlayersBody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

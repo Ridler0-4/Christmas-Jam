@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   jumpHeight: 15
+  UnknownPlayersBody: {fileID: 0}
 --- !u!70 &5693755599328351844
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
