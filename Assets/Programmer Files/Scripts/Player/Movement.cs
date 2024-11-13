@@ -1,13 +1,14 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
+    //private Playercontrols playercontrols;
+
     [SerializeField]
     private float speed = 25f;
-    [SerializeField]
-    private float jumpHeight = 15;
+
+    private float jumpHeight = 15f;
 
     private Vector2 moveDirection = Vector2.zero;
 
@@ -25,12 +26,14 @@ public class Movement : MonoBehaviour
         moveDirection = value.Get<Vector2>();
     }
 
-    private void Onjump(InputValue value)
+    private void OnJump(InputValue value)
     {
-        if (value != null)
+        Debug.Log("jump");
+        if (UnknownPlayersBody.linearVelocityY == 0)
         {
-            jumpHeight = value.Get<float>();
+            UnknownPlayersBody.linearVelocityY = jumpHeight;
         }
+
     }
     private void Move()
     {
@@ -46,16 +49,13 @@ public class Movement : MonoBehaviour
     }
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && UnknownPlayersBody.linearVelocityY == 0)
-        {
-            UnknownPlayersBody.linearVelocityY = jumpHeight;
-        }
+        
     }
 
     void Update()
     {
         Move();
-        Jump();
+        //Jump();
     }
 
 
