@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 215036619}
   - component: {fileID: 215036622}
   - component: {fileID: 215036623}
+  - component: {fileID: 215036624}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -522,6 +523,36 @@ MonoBehaviour:
   speed: 3
   jumpHeight: 5
   UnknownPlayersBody: {fileID: 215036622}
+--- !u!114 &215036624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215036618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 121018772}
 --- !u!1 &417962657
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,11 +871,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2587088670041417075, guid: e65f7dfc602a2634c93c90dad290315b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.53
+      value: -3.47
       objectReference: {fileID: 0}
     - target: {fileID: 2587088670041417075, guid: e65f7dfc602a2634c93c90dad290315b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.45
+      value: -1.18
       objectReference: {fileID: 0}
     - target: {fileID: 2587088670041417075, guid: e65f7dfc602a2634c93c90dad290315b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -910,7 +941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4144795416703519577, guid: 9ac297ba472d59a4485bef59f7a83ed4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.053972818
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4144795416703519577, guid: 9ac297ba472d59a4485bef59f7a83ed4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1015,8 +1046,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 121018773}
-  - {fileID: 849065222}
   - {fileID: 417962658}
+  - {fileID: 849065222}
   - {fileID: 1898287946}
   - {fileID: 2061776552}
   - {fileID: 1949818448}
