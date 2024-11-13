@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Collisiondetection;
 
 public class Movement : MonoBehaviour
 {
@@ -9,9 +10,10 @@ public class Movement : MonoBehaviour
     private float speed = 25f;
 
     [SerializeField]
-    private float jumpHeight = 3f;
+    public float jumpHeight = 3f;
 
     private Vector2 moveDirection = Vector2.zero;
+
 
 
     [SerializeField]
@@ -35,6 +37,10 @@ public class Movement : MonoBehaviour
             UnknownPlayersBody.linearVelocityY = jumpHeight;
         }
 
+    }
+    public void JumpBoost(float Jumpboost)
+    {
+        UnknownPlayersBody.linearVelocityY = Jumpboost;
     }
     private void Move()
     {
