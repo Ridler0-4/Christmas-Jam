@@ -7,8 +7,9 @@ public class Movement : MonoBehaviour
 
     [SerializeField]
     private float speed = 25f;
+
     [SerializeField]
-    private float jumpHeight = 15f;
+    private float jumpHeight = 3f;
 
     private Vector2 moveDirection = Vector2.zero;
 
