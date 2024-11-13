@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5740355115293895392}
   - component: {fileID: 5148743437802171044}
   m_Layer: 0
-  m_Name: Floor 1
+  m_Name: StoneFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 7190314887188893885}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.3070798, y: -0.7095529, z: 0.0046964483}
-  m_LocalScale: {x: 7.9045997, y: -0.08062958, z: 1}
+  m_LocalPosition: {x: 9.2527, y: 2.93, z: 0.0046964483}
+  m_LocalScale: {x: 38.49917, y: -0.23450308, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

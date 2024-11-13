@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fded4fd764976fa47acccdbc3c5d25e7
+guid: 99c762ac4b7308a4f93b8561123fa23e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2900488150497807839
-    second: Exit Button2_0
+      213: 657769319100566414
+    second: Fall-1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,6 +84,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exit Button2_0
+      name: Fall-1_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 149
-        width: 138
-        height: 59
+        x: 12
+        y: 0
+        width: 39
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 122395205656fb7d0800000000000000
-      internalID: -2900488150497807839
+      spriteID: e8bc321f5bdd02900800000000000000
+      internalID: 657769319100566414
       vertices: []
       indices: 
       edges: []
@@ -161,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Exit Button2_0: -2900488150497807839
+      Fall-1_0: 657769319100566414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
