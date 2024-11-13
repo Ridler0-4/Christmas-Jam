@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
     //private Playercontrols playercontrols;
 
     [SerializeField]
-    private float speed = 4f;
+    private float speed = 25f;
 
     [SerializeField]
     private float jumpHeight = 3f;

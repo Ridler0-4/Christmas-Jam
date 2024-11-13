@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Charactergoggles big file_0: -6526982346434761584
+      Charactergoggles big file_1: -1967289974383667998
+      Charactergoggles big file_2: -8166265083723599024
+      Charactergoggles big file_3: 127438894355270458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
