@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 024e0a457e7965d44b9ef2eb7218acc9
+guid: 96a932eb9e0ca0646a435a80be69a7dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2230229002620744338
-    second: Start Button_0
+      213: 7286973602206979802
+    second: Set. Button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Start Button_0
+      name: Set. Button_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 103
-        width: 40
-        height: 18
+        x: 7
+        y: 84
+        width: 52
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6d4403d982ac01e0800000000000000
-      internalID: -2230229002620744338
+      spriteID: ad6123712e7802560800000000000000
+      internalID: 7286973602206979802
       vertices: []
       indices: 
       edges: []
@@ -134,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Set. Button_0: 7286973602206979802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
