@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour
     private void OnJump(InputValue value)
     {
         Debug.Log("jump");
-        if (UnknownPlayersBody.linearVelocityY == 0)
+        if (UnknownPlayersBody.linearVelocityY < 0.001 && UnknownPlayersBody.linearVelocityY > -0.001)
         {
             UnknownPlayersBody.linearVelocityY = jumpHeight;
         }
@@ -48,15 +48,9 @@ public class Movement : MonoBehaviour
             this.GetComponent<SpriteRenderer>().flipX = true;
         }
     }
-    private void Jump()
-    {
-        
-    }
-
     void Update()
     {
         Move();
-        //Jump();
     }
 
 
