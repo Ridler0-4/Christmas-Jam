@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
     private void OnJump(InputValue value)
     {
         Debug.Log("jump");
-        if (UnknownPlayersBody.linearVelocityY < 0.001 && UnknownPlayersBody.linearVelocityY > -0.001)
+        if (UnknownPlayersBody.linearVelocityY < 0.01 && UnknownPlayersBody.linearVelocityY > -0.01)
         {
             UnknownPlayersBody.linearVelocityY = jumpHeight;
         }

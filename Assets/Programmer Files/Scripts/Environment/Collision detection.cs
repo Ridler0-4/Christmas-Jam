@@ -1,40 +1,34 @@
-using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static Movement;
+
 public class Collisiondetection : MonoBehaviour
 {
+    bool Detect = false;
     [SerializeField]
-    public int CollisionType = 0;
-
-    [SerializeField]
-    float Jumpboost = 10f;
-
-
-
+    int CollisionType = 0;
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
 
         while (collider2D.tag == "Player" || collider2D.tag == "Ice Block")
         {
             Debug.Log("Detected!");
+            Detect = true;
             if (CollisionType == 0)
             {
-                //jump
-                collider2D.gameObject.GetComponent<Movement>().JumpBoost(Jumpboost);
-                Debug.Log("JumpBoost Started");
+                //Jump
             }
             else if (CollisionType == 1)
             {
-                //pressureplate
+                //Pressure plate
             }
             else if (CollisionType == 2)
             {
-               //plate
+                //Spike
             }
         }
+  
     }
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,6 +38,6 @@ public class Collisiondetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
