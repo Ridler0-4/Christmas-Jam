@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits-Hunter.unity
     guid: fd030c328b3d11046b12172b1eca5d31
+  - enabled: 1
+    path: Assets/Scenes/Credits-Faith.unity
+    guid: ad35a364c3fc39044b4a80daa9db15d7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
