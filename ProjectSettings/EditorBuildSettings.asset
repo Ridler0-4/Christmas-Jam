@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main menu.unity
     guid: 4ea21f69b043be4459981736db44b1ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/First level.unity
     guid: 673cb024c3411b34fa7a32ae39362894
   - enabled: 1
     path: Assets/Scenes/Credits-Alex.unity
     guid: d96047d6c73610d478296d948da93fe9
+  - enabled: 1
+    path: Assets/Scenes/Credits-Hunter.unity
+    guid: fd030c328b3d11046b12172b1eca5d31
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
