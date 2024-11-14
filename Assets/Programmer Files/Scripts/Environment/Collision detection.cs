@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class Collisiondetection : MonoBehaviour
 {
-    bool Detect = false;
     [SerializeField]
     int CollisionType = 0;
     [SerializeField]
@@ -15,7 +14,6 @@ public class Collisiondetection : MonoBehaviour
         if (collider2D.tag == "Player" || collider2D.tag == "Ice Block")
         {
             Debug.Log("Detected!");
-            Detect = true;
             if (CollisionType == 0 && collider2D.tag == "Player")
             {
                 //Jump

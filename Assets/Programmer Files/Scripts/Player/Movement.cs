@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static Collisiondetection;
@@ -6,6 +5,11 @@ using static Collisiondetection;
 public class Movement : MonoBehaviour
 {
     //private Playercontrols playercontrols;
+
+    public SpriteRenderer crisscross;
+    public SpriteRenderer spriteRenderer;
+    public GameObject obeject;
+    public GameObject Apple;
 
     [SerializeField]
     private float speed = 25f;
@@ -55,6 +59,34 @@ public class Movement : MonoBehaviour
         }
 
     }
+
+    void Animation()
+    {
+        if ( UnknownPlayersBody.linearVelocityY > 0.5)
+        {
+            spriteRenderer.enabled = false;
+            Apple.SetActive(true);
+        }
+        else if (UnknownPlayersBody.linearVelocityX > 1f)
+        {
+            spriteRenderer.enabled = false;
+            obeject.SetActive(true);
+            crisscross.flipX = false;
+        }
+        else if (UnknownPlayersBody.linearVelocityX < -1f)
+        {
+            spriteRenderer.enabled = false;
+            obeject.SetActive(true);
+            crisscross.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.enabled = true; 
+            obeject.SetActive(false);
+            Apple.SetActive(false);
+        }
+    }
+
     private void Move()
     {
         UnknownPlayersBody.linearVelocityX = moveDirection.x * speed;
@@ -70,6 +102,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         Move();
+        Animation();
     }
 
 
