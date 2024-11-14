@@ -28,6 +28,12 @@ public class Movement : MonoBehaviour
     {
         moveDirection = value.Get<Vector2>();
     }
+    
+    void JumpBoost(float Jumpboost)
+    {
+        Debug.Log("log");
+        UnknownPlayersBody.linearVelocityY = Jumpboost;
+    }
 
     private void OnJump(InputValue value)
     {
@@ -37,10 +43,6 @@ public class Movement : MonoBehaviour
             UnknownPlayersBody.linearVelocityY = jumpHeight;
         }
 
-    }
-    public void JumpBoost(float Jumpboost)
-    {
-        UnknownPlayersBody.linearVelocityY = Jumpboost;
     }
     private void Move()
     {
