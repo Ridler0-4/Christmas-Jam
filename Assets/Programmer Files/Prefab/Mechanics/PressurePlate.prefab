@@ -147,3 +147,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c0dd280c535fc43b2777bf8bd8c6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollisionType: 0
+  Jumpboost: 10

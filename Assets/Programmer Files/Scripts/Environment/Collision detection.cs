@@ -4,19 +4,21 @@ using UnityEngine.SceneManagement;
 
 public class Collisiondetection : MonoBehaviour
 {
-    bool Detect = false;
     [SerializeField]
     int CollisionType = 0;
+    [SerializeField]
+    float Jumpboost = 10f;
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
 
-        while (collider2D.tag == "Player" || collider2D.tag == "Ice Block")
+        if (collider2D.tag == "Player" || collider2D.tag == "Ice Block")
         {
             Debug.Log("Detected!");
-            Detect = true;
-            if (CollisionType == 0)
+            if (CollisionType == 0 && collider2D.tag == "Player")
             {
                 //Jump
+                collider2D.gameObject.SendMessageUpwards("JumpBoost", Jumpboost);
+                Debug.Log("Debug");
             }
             else if (CollisionType == 1)
             {
